@@ -6,4 +6,14 @@
     <RootNamespace>supa_cataloger</RootNamespace>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="ClosedXML" Version="0.94.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="data\TestData.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
 </Project>

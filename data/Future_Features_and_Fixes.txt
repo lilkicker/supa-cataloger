@@ -1,0 +1,21 @@
+Features
+	-	Data Entry (this tool would help catalogers who are checking Needs Reviews determine which items should or should not be 			included. It will automatically fill in brand, manufacturer, and category information. This would be a sizeable addition to 			the tool.)
+	-	Highlight Z-Exclude products that may actually need to be included (this function currently exists but is not integrated with 			the default process of the tool. Adding this would change the running order of functions and reduce redundancy)
+	-	Check column consistency (the tool will identify columns that may not belong or be out of place.)
+	-	Auto-fill retailer column (typically this is just AMAZON and would fix any possible retailer related error upon upload.)
+	-	Auto-fill blank cells (debatable)
+	-	Count the number of adjustments made to the catalog when checking (It’s really easy to just blaze through and correct errors 			and forget to mark the rows that you’ve corrected. This would count for you and tell you your result at the end. Maybe even 			possibly include notes?)
+	-	Highlight brands that are listed with multiple manufacturers
+	-	Search for sizes and quantities in titles (this could highlight rows where the quantity and size listed don’t match what is 			found in the title)
+	-	External keyword search (these keywords could be provided via a separate excel sheet and would be used to further properly 			identify products as Y-Include or Z-Exclude)
+	-	Automatically create pivot tables (though not need for the tool catalogers still create pivot tables because that is what they 			are used to)
+
+Fixes
+	-	Clear any column filters prior to running functions (having data filters set can cause errors when running the tool in certain 			situations)
+	-	Error count (the tool will provide you with a count of rows that have errors and the total amount of errors which isn’t 			accurate)
+	-	Automatically save as excel document (there has been one instance of a cataloger losing a large portion of the catalog because 			the file was saved as a CSV. This is would be a problem because the tool stores information in separate sheets before 				completing)
+	-	Proper error handling (any user is prompted to go to debugger if an error is encountered and I would like to avoid this)
+	-	Remove 2-button process (you prep the catalog and then check the catalog. This often just leads to confusion and may not even 			be necessary)
+	-	Remove “=“ from the beginning of any cell (or just remove it regardless of where it is)
+	-	Trim only columns with actual strings. In some cases, values (numbers only) are being converted to scientific notation.
+	-	Remove the “matches” column from the excludes sheet when attempting to restore the catalog.
